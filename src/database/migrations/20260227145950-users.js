@@ -10,7 +10,7 @@ module.exports = {
         allowNull:false,
         autoIncrement:true,
         primaryKey:true,
-        },
+      },
       nome: {
         type:Sequelize.STRING,
         allowNull:false,
@@ -19,7 +19,7 @@ module.exports = {
         type:Sequelize.STRING,
         allowNull:false,
         unique:true,
-        },
+      },
       password_hash:{
         type:Sequelize.STRING,
         allowNull:false,
@@ -37,6 +37,6 @@ module.exports = {
 
   async down (queryInterface) {
 
-     await queryInterface.dropTable('users');
+    await queryInterface.dropTable('users');
   }
 };

@@ -10,19 +10,19 @@ module.exports = {
         allowNull:false,
         autoIncrement:true,
         primaryKey:true,
-        },
+      },
       nome: {
         type:Sequelize.STRING,
         allowNull:false,
-        },
+      },
       sobrenome: {
         type:Sequelize.STRING,
         allowNull:false,
-        },
+      },
       email:{
         type:Sequelize.STRING,
         allowNull:false,
-        },
+      },
       idade:{
         type:Sequelize.INTEGER,
         allowNull:false,
@@ -48,6 +48,6 @@ module.exports = {
 
   async down (queryInterface) {
 
-     await queryInterface.dropTable('alunos');
+    await queryInterface.dropTable('alunos');
   }
 };

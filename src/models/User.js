@@ -15,7 +15,7 @@ export default class User extends Model{
         }
       },
       email:{
-       type:Sequelize.STRING,
+        type:Sequelize.STRING,
         defaultValue:'',
         unique:{
           msg:'Email já existe'
@@ -29,9 +29,9 @@ export default class User extends Model{
       password_hash:{
         type:Sequelize.STRING,
         defaultValue:'',
-       },
+      },
       password:{
-       type:Sequelize.VIRTUAL,
+        type:Sequelize.VIRTUAL,
         defaultValue:'',
         validate:{
           len:{
@@ -42,7 +42,7 @@ export default class User extends Model{
       }
     },{
       sequelize,
-  });
+    });
 
     this.addHook('beforeSave',async (user) => {
       if(user.password){
