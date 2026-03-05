@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "build":"sucrase ./src -d ./dist --transforms typescript imports",
+    "build":"sucrase ./src -d ./dist --transforms imports",
     "start":"node dist/server.js"
   },
   "keywords": [],
