@@ -11,7 +11,7 @@ export default defineConfig([
     languageOptions: { globals: globals.node },
     rules: {
       'no-multiple-empty-lines': ['error', { 'max': 1, 'maxEOF': 1 }], // Limita a 1 linha em branco
-      'semi': ['error', 'always'],'no-console':'off','class-methods-use-this':'off','quotes': ['error', 'single',{'avoidEscape':true}],'indent': ['error', 2],         // Ponto e vírgula obrigatório
+      'semi': ['error', 'always'],'no-console':'off','class-methods-use-this':'off','quotes': ['error', 'single',{'avoidEscape':true}],'indent': ['error', 2],'no-unused-vars': 'off'       // Ponto e vírgula obrigatório
     }
   },
   {

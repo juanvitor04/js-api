@@ -1,4 +1,4 @@
-import User from '../models/User.js';
+import User from '../models/User';
 
 class UserController{
   //store
@@ -67,7 +67,7 @@ class UserController{
     }
     catch(e){
       return res.status(400).json({
-        errors:e.errors.map((err) => message)
+        errors:e.errors.map((err) => err.message)
       });
     }
   }
